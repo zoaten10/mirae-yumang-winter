@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 실습</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e3e3e3;
+            margin-bottom: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* flex-direction 속성을 변경해보세요 */
+            justify-content: center; /* justify-content 속성을 변경해보세요 */
+            align-items: center; /* align-items 속성을 변경해보세요 */
+            flex-wrap: nowrap; /* flex-wrap 속성을 변경해보세요 */
+            gap: 10px;
+            background-color: #e2e3e5;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .flex-item {
+            background-color: #ffcccb;
+            padding: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox 실습</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Flexbox 레이아웃 이해하기</h2>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+            <p><strong>실습 내용:</strong></p>
+            <ul>
+                <li>`.flex-container`의 `flex-direction` 속성을 `row`, `row-reverse`, `column`, `column-reverse`로 변경해보세요.</li>
+                <li>`.flex-container`의 `justify-content` 속성을 `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`로 변경해보세요.</li>
+                <li>`.flex-container`의 `align-items` 속성을 `flex-start`, `flex-end`, `center`, `stretch`, `baseline`으로 변경해보세요.</li>
+                <li>`.flex-container`의 `flex-wrap` 속성을 `nowrap`, `wrap`, `wrap-reverse`로 변경해보세요.</li>
+            </ul>
+            <p><strong>관찰할 점:</strong></p>
+            <ul>
+                <li>`flex-direction`이 요소들의 배치 방향을 어떻게 변경하는지 확인해보세요.</li>
+                <li>`justify-content`가 주 축(main axis)에서 요소들을 어떻게 정렬하는지 관찰해보세요.</li>
+                <li>`align-items`가 교차 축(cross axis)에서 요소들을 어떻게 정렬하는지 확인해보세요.</li>
+                <li>`flex-wrap`이 요소들의 래핑(wrapping)에 어떤 영향을 미치는지 관찰해보세요.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Flexbox 실습 페이지</p>
+    </footer>
+</body>
+</html>

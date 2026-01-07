@@ -1,0 +1,66 @@
+<style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e3e3e3;
+            margin-bottom: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        /* Grid 실습 기본 요소 스타일 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 기본 3열 */
+            gap: 30px; /* 그리드 간격 */
+            background-color: #e2e3e5;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .grid-item {
+            background-color: #ffcccb;
+            padding: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            grid-area: auto;
+        }
+
+        /* 이부분 수정 */
+        /*
+        .grid-container {
+            grid-template-columns: repeat(4, 2fr);
+            grid-template-rows: 100px 200px;
+            gap: 15px;
+            justify-items:center;
+            align-items: start;
+        }*/
+
+        .grid-item:nth-child(1) {
+            grid-area: 1 / 1 / 2 / 3; /* 행 시작 / 열 시작 / 행 끝 / 열 끝 */
+        
+    </style>

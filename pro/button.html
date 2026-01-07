@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 Grid 레이아웃 실습</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e3e3e3;
+            margin-bottom: 20px;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        /* Grid 컨테이너 기본 스타일 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 기본 4열 */
+            gap: 10px; /* 그리드 아이템 간격 */
+            background-color: #e2e3e5;
+            padding: 10px;
+        }
+
+        /* Grid 아이템 기본 스타일 */
+        .grid-item {
+            background-color: #ffcccb;
+            padding: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        
+    .button {
+        background-color: rebeccapurple;
+        transition: background-color 0.1s ease;
+        width: 300px;
+        height: 300px;
+}
+
+    .button:hover {
+        background-color: purple;
+    }
+
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+    }
+        to {
+            transform: translateX(0);
+    }
+}
+
+.animated-element {
+    animation: slideIn 1s forwards;
+}
+
+
+
+
+
+        /* 수정할 곳 */
+        
+        /* 예시:
+        @media (max-width: ???px) {
+            .grid-container {
+                grid-template-columns: ??? /* 모바일에서는 1열 */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>반응형 Grid 레이아웃 실습</h1>
+    </header>
+
+    <main>
+        <button class="button"> 누르기</button>
+
+        <section id="grid-layout-section">
+            <h2>Grid 레이아웃 실습</h2>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+            </div>
+            <p><strong>실습 내용:</strong></p>
+            <ul>
+                <li>`.grid-container`의 `grid-template-columns` 속성을 수정하여 전체 화면에서 4열 레이아웃을 유지하세요.</li>
+                <li>미디어 쿼리를 사용하여 화면 너비가 600px 이하일 때 `.grid-container`의 `grid-template-columns`을 1열로 변경하세요.</li>
+                <li>필요에 따라 `gap`이나 `padding` 등을 조정하여 레이아웃을 깔끔하게 만들어보세요.</li>
+            </ul>
+            <p><strong>관찰할 점:</strong></p>
+            <ul>
+                <li>화면 크기에 따라 그리드 아이템의 배치가 어떻게 변하는지 확인해보세요.</li>
+                <li>미디어 쿼리가 제대로 적용되어 모바일 화면에서 1열 레이아웃이 되는지 확인하세요.</li>
+                <li>그리드 간격과 아이템의 크기가 레이아웃 변화에 어떻게 영향을 미치는지 관찰해보세요.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 반응형 Grid 실습 페이지</p>
+    </footer>
+</body>
+</html>
